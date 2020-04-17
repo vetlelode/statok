@@ -15,4 +15,5 @@ X = df[['Vekt', 'Alder']]
 Y = df['Blodtrykk']
 X = sm.add_constant(X)
 res = sm.OLS(Y, X).fit()
+
 print(res.summary())
