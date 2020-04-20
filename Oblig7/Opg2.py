@@ -8,7 +8,6 @@ D = np.array([45, 22, 20, 41, 22, 19, 34, 23, 20, 26, 29])
 
 dfn = 3
 dfd = len(A) + len(B) + len(C) + len(D) - dfn
-print(dfd)
 
 f, p = stats.f_oneway(A, B, C, D)
 print("testobservatoren F:{} er større en kvantilen:{}\nDerfor kan hypotesen H0 forkastes".format(
